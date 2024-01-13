@@ -7,7 +7,7 @@ import NewsLetter from "../Components/NewsLetter/NewsLetter";
 
 function Shop() {
   return (
-    <div className="Shop">
+    <div className="Shop" style={{display:"block"}}>
       <Hero />
       <Popular />
       <Offers />

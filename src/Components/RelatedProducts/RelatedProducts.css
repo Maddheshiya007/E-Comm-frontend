@@ -1,9 +1,9 @@
 .relatedproducts{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    height: 90vh;
 }
 .relatedproducts h1{
     color: #171717;
@@ -19,5 +19,14 @@
 .relatedproducts-item{
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+@media (max-width:500px) {
+    .relatedproducts h1{
+        font-size: 25px;
+    }
 }

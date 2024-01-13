@@ -1,8 +1,10 @@
 .discriptionbox{
-    margin: 120px 170px;
+    padding:30px;
+
 }
 .discriptionbox-navigator{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .discriptionbox-nav-box{
@@ -20,9 +22,8 @@
     color: #555;
 }
 .discriptionbox-discription{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 48px;
-    padding: 48px;
-    padding-bottom: 70px;
 }

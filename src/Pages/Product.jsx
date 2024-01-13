@@ -11,7 +11,7 @@ function Product() {
   const {productId} = useParams();
   const product = all_product.find((e)=>e.id === Number(productId));
   return (
-    <div className="product">
+    <div className="product" >
       <Breadcrum product={product} />
       <ProductDisplay product={product}/>
       <DiscriptionBox/>

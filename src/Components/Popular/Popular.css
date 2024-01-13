@@ -1,9 +1,9 @@
 .popular{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap:10px;
-    height: 90vh;
 }
 
 .popular h1{
@@ -22,5 +22,14 @@
 .popular-item{
     margin-top:50px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+@media (max-width:800px) {
+    .popular h1{
+        font-size: 20px;
+    }
 }

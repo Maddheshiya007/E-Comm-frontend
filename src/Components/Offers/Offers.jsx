@@ -1,20 +1,22 @@
 import React from "react";
-import './Offers.css';
+// import './Offers.css';
+import '../Hero/Hero.css'
 import exclusive_image from "../Assests/exclusive_image.png";
 
 
 const Offers = () => { 
-    return (
-        <div className="offers">
-           <div className="offers-left">
-            <h1>Excludive</h1>
-            <h1>Offers For You</h1>
-            <p>ONLY ON BEST SELLERS PRODUCTS</p>
-            <button>Check Now</button>
+    return (<div>
+        <div className="offers hero">
+           <div className="offers-left hero-left">
+            <h2>Exclusive</h2>
+            <h2>Offers For You</h2>
+            <p>Only on best sellers products</p>
+            <button className="hero-latest-btn">Check Now</button>
            </div>
-           <div className="offers-right">
+           <div className="offers-right hero-right">
             <img src={exclusive_image} alt="" />
            </div>
+        </div>
         </div>
     );  
 }

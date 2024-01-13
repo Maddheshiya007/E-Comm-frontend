@@ -1,4 +1,5 @@
 .new-collections{
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,8 +21,18 @@
 }
 
 .collections{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     margin-top: 50px;
+}
+
+@media (max-width:500px) {
+    .new-collections h1{
+        color: #171717;
+        font-size: 25px;
+        font-weight: 600;
+    }
 }

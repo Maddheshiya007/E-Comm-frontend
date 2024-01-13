@@ -12,6 +12,10 @@
     gap:10px
 }
 
+.nav-logo img{
+    width: 8em;
+}
+
 .nav-logo p{
     color: #171717;
     font-size: 38px;
@@ -22,9 +26,10 @@
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 50px;
+    gap: 20px;
+    justify-content: space-around;
     color: #626262;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -48,7 +53,7 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 40px;
 }
 
 .nav-login-cart button{
@@ -80,4 +85,29 @@
     font-size: 14px;
     background-color: red;
     color: white;
+}
+
+@media screen {
+    
+}
+
+@media(max-width:800px) {
+    
+    .nav-logo img{
+        width: 5rem;
+    }
+    .nav-menu{
+        font-size: 12px;
+    }
+    .nav-login-cart button{
+        width: 80px;
+        font-size: 12px;
+        height: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar{
+        flex-direction: column;
+    }
 }
