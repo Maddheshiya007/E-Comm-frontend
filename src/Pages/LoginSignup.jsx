@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './CSS/LoginSignup.css'
-// require('dotenv').config()
 
 function LoginSignup() {
 
@@ -42,8 +41,8 @@ function LoginSignup() {
         'Content-Type': "application/json"
       },
       body: JSON.stringify(formData)
-    }).then((res) => res.json()).then((data) => responseData = data)
-    localStorage()
+    }).then((res) => res.json()).then((data) => responseData = data);
+    
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token)
       window.location.replace('/');
