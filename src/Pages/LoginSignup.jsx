@@ -24,12 +24,12 @@ function LoginSignup() {
         'Content-Type': "application/json"
       },
       body: JSON.stringify(formData)
-    }).then((res) => res.json()).then((data) => responseData = data)
+    }).then((res) => res.json()).then((data) => responseData = data);
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token)
       window.location.replace('/');
     }
-    else (alert(responseData.erorrs))
+    else (alert(responseData.error))
   }
   const signup = async () => {
     let responseData;
@@ -42,12 +42,12 @@ function LoginSignup() {
       },
       body: JSON.stringify(formData)
     }).then((res) => res.json()).then((data) => responseData = data);
-    
+
     if (responseData.success) {
       localStorage.setItem('auth-token', responseData.token)
       window.location.replace('/');
     }
-    else { alert(responseData.erorrs) }
+    else { alert(responseData.erorr) }
 
   }
 

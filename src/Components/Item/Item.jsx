@@ -8,8 +8,8 @@ const Item = (props) => {
            <Link to={`/product/${props.id}`}><img src={props.image} onClick={window.scrollTo(0,0)} alt="" /></Link> 
             <p>{props.name}</p>
               <div className="item-prices">
-                <p className="item-price-new">₹{props.new_price}</p>
-                <p className="item-price-old">₹{props.old_price}</p>
+                <p className="item-price-new">${props.new_price}</p>
+                <p className="item-price-old">${props.old_price}</p>
             </div>
         </div>
     );

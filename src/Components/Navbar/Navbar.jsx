@@ -27,10 +27,8 @@ const Navbar = () => {
                 
                 <Link to='/cart'><img src={cart_icon} alt="cart-icon" /></Link>
                 <div className="nav-cart-count">{getTotalCartItems()}</div>
-               
             </div>
         </div>
     );
 };
-
 export default Navbar;
