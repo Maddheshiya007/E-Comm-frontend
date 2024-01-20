@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter,Routes, Route } from "react-router-dom";
@@ -11,7 +10,6 @@ import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assests/banner_mens.png';
 import women_banner from './Components/Assests/banner_women.png';
 import kid_banner from './Components/Assests/banner_kids.png';
-
 
 
 function App() {
